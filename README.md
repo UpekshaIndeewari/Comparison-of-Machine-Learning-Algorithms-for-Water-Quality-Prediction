@@ -324,7 +324,7 @@ When comparing the performance parameters for each models Accuracy, precision, F
 3. Mourade, A et al (2022). Machine learning algorithms for efficient water quality prediction, 2793-2801.
 4. Umair, A et al (2019). EffcientWater Quality Prediction Using Supervised Machine Learning.
 5. Xijuan, W et al (2022). A Water Quality Prediction Model Based on Multi-Task Deep Learning: A Case Study of the Yellow River, China
-6. Amir, H.H et al (2018). Water quality prediction using machine learning methods, 3-13.
+6. Amir, H.H et al (2018). Water quality prediction using machine learning methods, 3-13. 
 
 
 
