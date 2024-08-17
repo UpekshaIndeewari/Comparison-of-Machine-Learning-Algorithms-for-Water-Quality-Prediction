@@ -21,7 +21,7 @@ This project aims to identify the most accurate and reliable machine learning al
 
 ### Description of Data Set
 
-The datasets employed in this project contains water quality metrics for 3276 different water bodies. The dataset can be downloaded freely from the [Kaggle](https://www.kaggle.com/datasets/adityakadiwal/water-potability). The water parameters that are available in the dataset are listed following table
+The datasets employed in this project contains 10 water quality metrics for 3276 different water bodies. The dataset can be downloaded freely from the [Kaggle](https://www.kaggle.com/datasets/adityakadiwal/water-potability). The water parameters that are available in the dataset are listed following table
 
 | Parameter| Variable Definition | Min | Max|
 | -------- | -------- | -------- | -------- |
@@ -47,9 +47,12 @@ This project was completed using [Orange](https://orangedatamining.com/) version
 ## Methodology 
 
 Following shows the proposed methodology for predict water quality using different ML algorithms.
+
 ![Methodology](https://github.com/UpekshaIndeewari/Comparison-of-Machine-Learning-Algorithms-for-Water-Quality-Prediction/blob/main/images/methodology.png)
 
 Hence this project is done by Orange software, above proposed methodology is utilized. Following shows the visual workflow construction done by Orange according to the proposed methodology.
+
+![workfolw](https://github.com/UpekshaIndeewari/Comparison-of-Machine-Learning-Algorithms-for-Water-Quality-Prediction/blob/main/images/orange%20work%20flow.PNG)
 
 following describe all the steps involved in this project using Orange software
 
@@ -58,9 +61,13 @@ following describe all the steps involved in this project using Orange software
 Data set was downloaded as .csv format. There are 3276 data with 10 Parameters.  
 
 a. Once data downloaded csv file was imported in to Orange. 
-open *file widget* in orange interface ---> right click ---> Cick open ---> Browse data set
+open *file widget* in orange interface ---> right click ---> Cick open ---> Browse data set 
 
-b. Next open Data Table widget receives one or more datasets in its input and presents them as a spreadsheet. Data instances may be sorted by attribute values. It shows all numeric and null values as a tabular format.
+![Data access](https://github.com/UpekshaIndeewari/Comparison-of-Machine-Learning-Algorithms-for-Water-Quality-Prediction/blob/main/images/data%20acuqisition.png)
+
+b. Next open **Data Table widget** receives one or more datasets in its input and presents them as a spreadsheet. Data instances may be sorted by attribute values. It shows all numeric and null values as a tabular format.
+
+![Data](https://github.com/UpekshaIndeewari/Comparison-of-Machine-Learning-Algorithms-for-Water-Quality-Prediction/blob/main/images/data%20acuqisition%202.png)
 
 ### 2.	Data Preprocessing 
 
@@ -68,7 +75,9 @@ Preprocessing helps transform data so that a better machine learning model can b
 
 **a. Missing value identification**
 
-Then open feature statistic widget to inspect and find potentially interesting features in the given data set. Histogram showing the distribution of feature's values. Further columns show different statistics. Mean, median, missing minimal and maximal value are computed only for numeric features. When consider about the missing values in data set, following missing values (percentages) for each parameters were identified. 
+Then open **feature statistic widget** to inspect and find potentially interesting features in the given data set. Histogram showing the distribution of feature's values. Further columns show different statistics. Mean, median, missing minimal and maximal value are computed only for numeric features. When consider about the missing values in data set, following missing values (percentages) for each parameters were identified. 
+
+![Missing value identification](https://github.com/UpekshaIndeewari/Comparison-of-Machine-Learning-Algorithms-for-Water-Quality-Prediction/blob/main/images/missing%20value%20identification.png)
 
 | Parameter |Number of missing values |
 |----------|----------|
@@ -83,6 +92,8 @@ Then open feature statistic widget to inspect and find potentially interesting f
 |Turbidity|0|
 |Portability| 0|
 
+b.	Filling missing values
+Then missing values were replaced the missing value with the corresponding mean value using impute widjet 
 
 
 
@@ -95,4 +106,6 @@ Then open feature statistic widget to inspect and find potentially interesting f
 
 
 
-ee 
+
+
+
