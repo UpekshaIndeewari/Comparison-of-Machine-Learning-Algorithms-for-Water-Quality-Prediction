@@ -20,6 +20,7 @@ This repository consisted data set and files used for this project
 - [Model Training](#model-training)
 - [Model Evaluation](#model-evaluation)
 - [Result and Discussion](#result-and-discussion)
+- [References](#references)
 
 ## Introduction 
 
