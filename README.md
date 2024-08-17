@@ -241,7 +241,7 @@ Precision is one indicator of a machine learning model's performance – the qua
 The precision is given by:
 
 $$
-\text{Precisiony} = \frac{TP}{TP +FP}
+\text{Precision} = \frac{TP}{TP +FP}
 $$
 
 where:
@@ -255,7 +255,7 @@ The recall measures the model's ability to detect Positive samples. Recall (or T
 The recall is given by:
 
 $$
-\text{Precision} = \frac{TP}{TP +FN}
+\text{Recall} = \frac{TP}{TP +FN}
 $$
 
 where:
@@ -269,7 +269,7 @@ F1 score is the performance measure over testing accuracy. It actually indicates
 The F1 score is given by:
 
 $$
-\text{F1} = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}
+\text{F1-Score} = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}
 $$
 
 ## Result and Discussion
