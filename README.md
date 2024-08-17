@@ -6,8 +6,8 @@ This repository consisted data set and files used for this project
 
 - [Introduction](#Introduction )
 - [Objectives](#Objectives)
-- [Materials and Methods](##Materials-and-Methods)
-- [Description of Data Set](##Description-of-Data-Set)
+- [Materials and Methods](#Materials-and-Methods)
+- [Description of Data Set](#Description-of-Data-Set)
 - [Software Used](#Software-Used)
 - [Methodology](#Methodology)
   - [Data Acquisition](#Data-Acquisition)
