@@ -4,22 +4,22 @@ This repository consisted data set and files used for this project
 
 ## Table of Content
 
-- [Introduction](#Introduction )
-- [Objectives](#Objectives)
-- [Materials and Methods](#Materials-and-Methods)
-- [Description of Data Set](#Description-of-Data-Set)
-- [Software Used](#Software-Used)
-- [Methodology](#Methodology)
-  - [Data Acquisition](##Data-Acquisition)
-  - [Data Preprocessing](#Data-Preprocessing)
-  - [Missing Value Identification](#Missing-Value-Identification)
-  - [Filling Missing Values](#Filling-Missing-Values)
-  - [Normalization](#Normalization)
-  - [Outlier Identification and Removal](#Outlier-Identification-and-Removal)
-- [Train and Test Method](#Train-and-Test-Method)
-- [Model Training](#Model-Traning)
-- [Model Evaluation](#Model-Evaluation)
-- [Result and Discussion](#Result-andDiscussion)
+- [Introduction](#introduction)
+- [Objectives](#objectives)
+- [Materials and Methods](#materials-and-methods)
+- [Description of Data Set](#description-of-data-set)
+- [Software Used](#software-used)
+- [Methodology](#methodology)
+  - [Data Acquisition](#data-acquisition)
+  - [Data Preprocessing](#data-preprocessing)
+  - [Missing Value Identification](#missing-value-identification)
+  - [Filling Missing Values](#filling-missing-values)
+  - [Normalization](#normalization)
+  - [Outlier Identification and Removal](#outlier-identification-and-removal)
+- [Train and Test Method](#train-and-test-method)
+- [Model Training](#model-training)
+- [Model Evaluation](#model-evaluation)
+- [Result and Discussion](#result-and-discussion)
 
 ## Introduction 
 
