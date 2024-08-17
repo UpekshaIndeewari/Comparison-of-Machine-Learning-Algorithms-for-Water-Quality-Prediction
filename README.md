@@ -1,6 +1,6 @@
-    # Comparison of Machine Learning Algorithms for Water Quality Prediction
+# Comparison of Machine Learning Algorithms for Water Quality Prediction
 
-This repository consisted data set and files used for this project
+This repository consisted data set and files used for this project.
 
 ## Table of Content
 
