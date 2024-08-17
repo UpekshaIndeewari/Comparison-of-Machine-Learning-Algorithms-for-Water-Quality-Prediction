@@ -143,7 +143,7 @@ Random Forest is an ensemble learning method used for both classification and re
 
 ![random forest](https://github.com/UpekshaIndeewari/Comparison-of-Machine-Learning-Algorithms-for-Water-Quality-Prediction/blob/main/images/Random_forest_explain.png)
 
-**Logistic regression**
+**Logistic Regression**
 
 Logistic Regression is a supervised learning algorithm used to predict the probability of a binary outcome (e.g., yes/no, true/false, 0/1).The model is based on the logistic function, also known as the sigmoid function, which maps any real-valued number into a value between 0 and 1, representing the probability of the event occurring.Logistic regression is typically employed to predict a categorical dependent variable (the outcome) using one or more independent variables (features). These independent variables can be either continuous or categorical. In this project **logistic regression widget** is used for build logistic regression model.
 
@@ -155,7 +155,7 @@ K-Nearest Neighbors (kNN) is a simple yet effective classification algorithm tha
 
 ![knn](https://github.com/UpekshaIndeewari/Comparison-of-Machine-Learning-Algorithms-for-Water-Quality-Prediction/blob/main/images/knn.png)
 
-**Support vector Machine**
+**Support Vector Machine**
 
 Support Vector Machine (SVM) is a powerful supervised learning algorithm used for both classification and regression tasks, though it is primarily used for classification.The main objective of the SVM algorithm is to find the optimal hyperplane that best separates the data points into different classes in an N-dimensional space, where N is the number of features. The hyperplane is chosen to maximize the margin, which is the distance between the hyperplane and the nearest data points from each class (known as support vectors). A larger margin leads to better generalization on unseen data. SVM is particularly effective in high-dimensional spaces and is versatile due to its ability to use different kernel functions (e.g., linear, polynomial, radial basis function) to handle non-linearly separable data. In this project **SVM  widget** is used for build Support vector machine model.
 
@@ -180,15 +180,15 @@ Model evaluation is the process of using different evaluation metrics to underst
 
 **Test and core widget** is used for Evaluation Results, results of testing classification algorithms.
 
-**Cross validation**
+**Cross Validation**
 
 The data set was split into two parts: training (75%) and testing (25%). The training set was subjected to repeated cross-validation, with the number of iterations fixed to Classifiers were trained in this manner. The model's optimal parameter configuration was selected, resulting in the maximum accuracy. In this project number of folds for cross validation is 5.
 
 ![CV](https://github.com/UpekshaIndeewari/Comparison-of-Machine-Learning-Algorithms-for-Water-Quality-Prediction/blob/main/images/grid_search_cross_validation.png)
 
-**Performance parameters**
+**Performance Parameters**
 
-*Classification Accuracy*
+**Classification Accuracy**
 
 The accuracy of the machine learning algorithm can be calculated from the confusion matrix
 
@@ -204,15 +204,15 @@ where:
 - $FP$ is False Positives, and
 - $FN$ is False Negatives.
 
-*Training time and Test time*
+**Training time and Test time**
 
 Training time refers to the time when an algorithm is learning a model from training data. Test time refers to the time when an algorithm is applying a learned model to make predictions.
 
-*Area under curve (AUC)*
+**Area under curve (AUC)**
 
 AUC measures the entire two-dimensional area underneath the entire ROC curve from (0,0) to (1,1). When AUC is increase the performace of the model is also increse.
 
-*Precision*
+**Precision**
 
 Precision is one indicator of a machine learning model's performance – the quality of a positive prediction made by the model. Precision refers to the number of true positives divided by the total number of positive predictions
 
@@ -226,7 +226,7 @@ where:
 - $TP$ is True Positives,
 - $FP$ is False Positives
 
-**Recall*
+**Recall**
 
 The recall measures the model's ability to detect Positive samples. Recall (or True Positive Rate) is calculated by dividing the true positives by anything that should have been predicted as positive.
 
@@ -240,15 +240,66 @@ where:
 - $TP$ is True Positives,
 - $FN$ is False Negatives
 
-*F1 Score*
+**F1 Score**
 
 F1 score is the performance measure over testing accuracy. It actually indicates that how stable the model is to predict the classes. If the F1 score is higher than the testing accuracy, then the system is more stable and accurate according to recall.
 
-The f1 score is given by:
+The F1 score is given by:
 
 $$
-\text{f1 score} = \frac2*{precision * recall}{precision + recall}
+\text{F1} = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}
 $$
+
+## Result and Discussion
+
+Followinng table shows the overall results given by each evaluation tests.
+
+| Parameter  | Logistic Regression | Decision Tree | Random Forest | KNN  | SVM  |
+|------------|---------------------|---------------|---------------|------|------|
+| **AUC**    | 0.542               | 0.991         | 0.841         | 0.66 | 0.525|
+| **CA**     | 0.614               | 0.991         | 0.764         | 0.657| 0.52 |
+| **F1**     | 0.492               | 0.991         | 0.755         | 0.642| 0.526|
+| **Precision** | 0.549            | 0.991         | 0.764         | 0.644| 0.536|
+| **Recall** | 0.614               | 0.991         | 0.764         | 0.657| 0.52 |
+
+**Train and Test Time**
+
+When consider about the train and test time for each algorithms, **KNN** has quick training time and **decision tree** has quick testing time.
+
+| Algorithm            | Train | Test  |
+|----------------------|-------|-------|
+| **Logistic Regression** | 0.217 | 0.039 |
+| **Tree**             | 0.482 | 0.001 |
+| **Random Forest**    | 1.943 | 0.076 |
+| **KNN**              | 0.153 | 0.509 |
+| **SVM**              | 1.766 | 0.31  |
+
+![time](https://github.com/UpekshaIndeewari/Comparison-of-Machine-Learning-Algorithms-for-Water-Quality-Prediction/blob/main/images/time.png)
+
+**Confusion Matrix**
+
+The diagonal are examined and the values of the confusion matrix belonging to each decision tree method are compared to each other, Diagonal numbers indicate the number of accurately predicted data. It is obvious that the maximum number is in **decision tree** Model.
+
+![CM](https://github.com/UpekshaIndeewari/Comparison-of-Machine-Learning-Algorithms-for-Water-Quality-Prediction/blob/main/images/CM.png)
+
+**AUC Curve**
+
+The AUC value is highest for **decision tree** Model and then **random forest**.
+
+![AUC](https://github.com/UpekshaIndeewari/Comparison-of-Machine-Learning-Algorithms-for-Water-Quality-Prediction/blob/main/images/auc.png)
+
+When consider about the precision, recall and f1 score values **decision tree** got the highest value then **random forest**
+
+![overall](https://github.com/UpekshaIndeewari/Comparison-of-Machine-Learning-Algorithms-for-Water-Quality-Prediction/blob/main/images/overall.png)
+
+As a result,
+When comparing the performance parameters for each models Accuracy, precision, F1 score, AUC and recall gives higher values for **Decision Tree Model** and **Random forest** model than other models. It is understood from this study that it is possible to predict water quality with Decision tree model and Random forest model which close to reality.
+
+
+
+
+
+
 
 
 
