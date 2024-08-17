@@ -5,13 +5,21 @@ This repository consisted data set and files used for this project
 ## Table of Content
 
 - [Introduction](#Introduction )
-- [Algorithm Performance](#algorithm-performance)
-  - [Logistic Regression](#logistic-regression)
-  - [Decision Tree](#decision-tree)
-  - [Random Forest](#random-forest)
-  - [KNN](#knn)
-  - [SVM](#svm)
-- [Conclusion](#conclusion)
+- [Objectives](#Objectives)
+- [Materials and Methods](#Materials-and-Methods)
+- [Description of Data Set](#Description-of-Data-Set)
+- [Software Used](#Software-Used)
+- [Methodology](#Methodology)
+  - [Data Acquisition](#Data-Acquisition)
+  - [Data Preprocessing](#Data-Preprocessing)
+  - [Missing Value Identification](#Missing-Value-Identification)
+  - [Filling Missing Values](#Filling-Missing-Values)
+  - [Normalization](#Normalization)
+  - [Outlier Identification and Removal](#Outlier-Identification-and-Removal)
+- [Train and Test Method](#Train-and-Test-Method)
+- [Model Training](#Model-Traning)
+- [Model Evaluation](#Model-Evaluation)
+- [Result and Discussion](#Result-andDiscussion)
 
 ## Introduction 
 
