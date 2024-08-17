@@ -73,7 +73,7 @@ b) Next open **Data Table widget** receives one or more datasets in its input an
 
 Preprocessing helps transform data so that a better machine learning model can be built, providing higher accuracy. The preprocessing performs various functions: outlier rejection, filling missing values, data normalization to improve the quality of data. 
 
-**a) Missing value identification**
+**a) Missing Value Identification**
 
 Then open **feature statistic widget** to inspect and find potentially interesting features in the given data set. Histogram showing the distribution of feature's values. Further columns show different statistics. Mean, median, missing minimal and maximal value are computed only for numeric features. When consider about the missing values in data set, following missing values (percentages) for each parameters were identified. 
 
@@ -92,7 +92,7 @@ Then open **feature statistic widget** to inspect and find potentially interesti
 |Turbidity|0|
 |Portability| 0|
 
-**b) Filling missing values**
+**b) Filling Missing Values**
 Then missing values were replaced the missing value with the corresponding mean value using **impute widjet.**
 
 ![filling missing values](https://github.com/UpekshaIndeewari/Comparison-of-Machine-Learning-Algorithms-for-Water-Quality-Prediction/blob/main/images/filling%20missing%20values.png)
@@ -104,30 +104,30 @@ The goal of normalization is to change the values of numeric columns in the data
 ![Normalization](https://github.com/UpekshaIndeewari/Comparison-of-Machine-Learning-Algorithms-for-Water-Quality-Prediction/blob/main/images/normalization.png)
 
 Once normalization finished, the new data table is used for further processing.
-•	**Save data widget** – to save new table in to local folder
-•	**Feature statistics widget** – to check missing values again. After cleaning the table, it is identified that no missing values for each parameters
-•	**Scatter plot widget** – The Scatter Plot widget provides a 2-dimensional scatter plot visualization between two parameters
+* **Save data widget** – to save new table in to local folder
+* **Feature statistics widget** – to check missing values again. After cleaning the table, it is identified that no missing values for each parameters
+* **Scatter plot widget** – The Scatter Plot widget provides a 2-dimensional scatter plot visualization between two parameters
 
-following shows the scatter plot between two paramenters after doing normalization
+Following shows the scatter plot between two paramenters after doing normalization
 
 ![normalization result](https://github.com/UpekshaIndeewari/Comparison-of-Machine-Learning-Algorithms-for-Water-Quality-Prediction/blob/main/images/result%20normalization.png)
 
-**d) Outlier identification and removal**
+**d) Outlier Identification and Removal**
 
 Outliers are the data points that are significantly different from the rest of the dataset. Using the **outliers widget** , filtered the dataset for detecting outliers and inliers. The number of outliers in the data set is 3000 and inliers are 276.
 
 ![outlier](https://github.com/UpekshaIndeewari/Comparison-of-Machine-Learning-Algorithms-for-Water-Quality-Prediction/blob/main/images/outlier%20identification%20and%20removal.png)
 
-### 3.	Train and test method
+### 3.	Train and Test Method
 
 After data cleaning and preprocessing, the dataset becomes ready to train and test. Using **data sampler widget**, **75%** train/test splitting method is used to test the different machine learning model’s Performance separately. In the train/split method, split the dataset randomly into the training and testing set.
-Number of data in training set – 2250
-Number of data in test set - 750 
-Total – 3000
+* Number of data in training set – 2250
+* Number of data in test set - 750 
+* Total – 3000
 
 ![split](https://github.com/UpekshaIndeewari/Comparison-of-Machine-Learning-Algorithms-for-Water-Quality-Prediction/blob/main/images/train%20and%20test%20method.png)
 
-### 4.	Model training 
+### 4.	Model Training 
 
 In this project, comprehensive studies are done applying different ML techniques like decision tree, random forest, logistic regression, k-nearest neighbours, support vector machine. 
 
@@ -149,7 +149,7 @@ Logistic Regression is a supervised learning algorithm used to predict the proba
 
 ![logistic regression](https://github.com/UpekshaIndeewari/Comparison-of-Machine-Learning-Algorithms-for-Water-Quality-Prediction/blob/main/images/logistic%20regression.png)
 
-**K-Nearest Neighbors (kNN)**
+**K-Nearest Neighbors**
 
 K-Nearest Neighbors (kNN) is a simple yet effective classification algorithm that classifies a data point by identifying its closest k neighbors in the training dataset and assigning the most common class (majority vote) among these neighbors.kNN is often not recommended for large datasets because it is computationally intensive during the prediction phase. For each new data point, the algorithm must calculate the distance to all points in the training set to determine the nearest neighbors, which can be slow and resource-demanding as the size of the dataset increases. In this project **knn widget** is used build for K-Nearest Neighbors model.
 
@@ -161,7 +161,7 @@ Support Vector Machine (SVM) is a powerful supervised learning algorithm used fo
 
 ![SVM](https://github.com/UpekshaIndeewari/Comparison-of-Machine-Learning-Algorithms-for-Water-Quality-Prediction/blob/main/images/support-vector-machine-algorithm.png)
 
-following shows the work flow to use testing and training data to train each models.
+Following shows the work flow to use testing and training data to train each models.
 
 ![model train](https://github.com/UpekshaIndeewari/Comparison-of-Machine-Learning-Algorithms-for-Water-Quality-Prediction/blob/main/images/modls.png)
 
@@ -169,19 +169,39 @@ following shows the work flow to use testing and training data to train each mod
 
 Model evaluation is the process of using different evaluation metrics to understand a machine learning model's performance, as well as its strengths and weaknesses. Model evaluation is important to assess the efficacy of a model during initial research phases, and it also plays a role in model monitoring. following methods are used for model evaluation stage.
 
-•	Cross Validation
-•	Performance parameters 
-o	Classification accuracy
-o	Training time and Test time
-o	Area under curve (AUC)
-o	Precision
-o	Recall
-o	F1 Score
+* Cross Validation
+* Performance parameters 
+  * Classification accuracy
+  * Training time and Test time
+  * Area under curve (AUC)
+  * Precision
+  * Recall
+  * F1 Score
 
 **Test and core widget** is used for Evaluation Results, results of testing classification algorithms.
 
-Cross validation 
+**Cross validation**
+
 The data set was split into two parts: training (75%) and testing (25%). The training set was subjected to repeated cross-validation, with the number of iterations fixed to Classifiers were trained in this manner. The model's optimal parameter configuration was selected, resulting in the maximum accuracy. In this project number of folds for cross validation is 5.
+
+**Performance parameters**
+
+*Classification Accuracy*
+
+The accuracy of the machine learning algorithm can be calculated from the confusion matrix
+
+The accuracy is given by:
+
+$$
+\text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}
+$$
+
+where:
+- $TP$ is True Positives,
+- $TN$ is True Negatives,
+- $FP$ is False Positives, and
+- $FN$ is False Negatives.
+
 
 
 
