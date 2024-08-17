@@ -1,5 +1,18 @@
 # Comparison of Machine Learning Algorithms for Water Quality Prediction
 
+This repository consisted data set and files used for this project
+
+## Table of Content
+
+- [Introduction](#Introduction )
+- [Algorithm Performance](#algorithm-performance)
+  - [Logistic Regression](#logistic-regression)
+  - [Decision Tree](#decision-tree)
+  - [Random Forest](#random-forest)
+  - [KNN](#knn)
+  - [SVM](#svm)
+- [Conclusion](#conclusion)
+
 ## Introduction 
 
 Water covers approximately 70% of the Earth's surface and is essential for sustaining life. However, rapid urbanization and industrialization have significantly deteriorated water quality, leading to an increase in waterborne diseases. Traditionally, water quality has been assessed through costly and time-intensive laboratory tests and statistical methods, which challenge the practicality of real-time monitoring. Various methods, such as multivariate statistical techniques, fuzzy inference systems, and Water Quality Index (WQI) calculations, have been employed to predict water potability. These approaches often involve monitoring numerous water quality parameters according to established standards, with the final evaluation results varying widely depending on the parameters chosen.
