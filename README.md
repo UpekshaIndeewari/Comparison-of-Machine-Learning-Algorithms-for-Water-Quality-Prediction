@@ -10,7 +10,7 @@ This repository consisted data set and files used for this project
 - [Description of Data Set](#Description-of-Data-Set)
 - [Software Used](#Software-Used)
 - [Methodology](#Methodology)
-  - [Data Acquisition](#Data-Acquisition)
+  - [Data Acquisition](#1.Data-Acquisition)
   - [Data Preprocessing](#Data-Preprocessing)
   - [Missing Value Identification](#Missing-Value-Identification)
   - [Filling Missing Values](#Filling-Missing-Values)
