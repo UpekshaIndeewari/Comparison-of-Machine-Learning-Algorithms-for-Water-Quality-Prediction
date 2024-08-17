@@ -184,6 +184,8 @@ Model evaluation is the process of using different evaluation metrics to underst
 
 The data set was split into two parts: training (75%) and testing (25%). The training set was subjected to repeated cross-validation, with the number of iterations fixed to Classifiers were trained in this manner. The model's optimal parameter configuration was selected, resulting in the maximum accuracy. In this project number of folds for cross validation is 5.
 
+![CV](https://github.com/UpekshaIndeewari/Comparison-of-Machine-Learning-Algorithms-for-Water-Quality-Prediction/blob/main/images/grid_search_cross_validation.png)
+
 **Performance parameters**
 
 *Classification Accuracy*
@@ -201,6 +203,52 @@ where:
 - $TN$ is True Negatives,
 - $FP$ is False Positives, and
 - $FN$ is False Negatives.
+
+*Training time and Test time*
+
+Training time refers to the time when an algorithm is learning a model from training data. Test time refers to the time when an algorithm is applying a learned model to make predictions.
+
+*Area under curve (AUC)*
+
+AUC measures the entire two-dimensional area underneath the entire ROC curve from (0,0) to (1,1). When AUC is increase the performace of the model is also increse.
+
+*Precision*
+
+Precision is one indicator of a machine learning model's performance – the quality of a positive prediction made by the model. Precision refers to the number of true positives divided by the total number of positive predictions
+
+The precision is given by:
+
+$$
+\text{Precisiony} = \frac{TP}{TP +FP}
+$$
+
+where:
+- $TP$ is True Positives,
+- $FP$ is False Positives
+
+**Recall*
+
+The recall measures the model's ability to detect Positive samples. Recall (or True Positive Rate) is calculated by dividing the true positives by anything that should have been predicted as positive.
+
+The recall is given by:
+
+$$
+\text{Precision} = \frac{TP}{TP +FN}
+$$
+
+where:
+- $TP$ is True Positives,
+- $FN$ is False Negatives
+
+*F1 Score*
+
+F1 score is the performance measure over testing accuracy. It actually indicates that how stable the model is to predict the classes. If the F1 score is higher than the testing accuracy, then the system is more stable and accurate according to recall.
+
+The f1 score is given by:
+
+$$
+\text{f1 score} = \frac2*{precision * recall}{precision + recall}
+$$
 
 
 
