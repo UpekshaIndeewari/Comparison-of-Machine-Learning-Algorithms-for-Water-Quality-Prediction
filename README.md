@@ -316,7 +316,14 @@ When consider about the precision, recall and f1 score values **decision tree** 
 As a result,
 When comparing the performance parameters for each models Accuracy, precision, F1 score, AUC and recall gives higher values for **Decision Tree Model** and **Random forest** model than other models. It is understood from this study that it is possible to predict water quality with Decision tree model and Random forest model which close to reality.
 
+##References
 
+1. Osim, K.P (2022). The Quality of Drinkable Water using Machine Learning Techniques, International Journal of Advanced Engineering Research and Science (IJAERS),16-23.
+2. Kurra S.S et al. (2022) Water Quality Prediction Using Machine Learning, International Research Journal of Modernization in Engineering Technology and Science, 692-696.
+3. Mourade, A et al (2022). Machine learning algorithms for efficient water quality prediction, 2793-2801.
+4. Umair, A et al (2019). EffcientWater Quality Prediction Using Supervised Machine Learning.
+5. Xijuan, W et al (2022). A Water Quality Prediction Model Based on Multi-Task Deep Learning: A Case Study of the Yellow River, China
+6. Amir, H.H et al (2018). Water quality prediction using machine learning methods, 3-13.
 
 
 
